@@ -286,6 +286,10 @@ i {
   transition: 0.3s;
 }
 
+form {
+  width: 100%;
+}
+
 .bg-brown {
   background-color: #F4E8B5;
 }
@@ -319,9 +323,6 @@ i {
 .main-header {
   padding-bottom: 0.5rem;
 }
-.main-header .ml-8 {
-  margin-left: 1rem;
-}
 .main-header .nav-btn {
   font-size: 2rem;
   color: #C0944A;
@@ -334,18 +335,23 @@ i {
 .main-header .top-nav .left-header {
   gap: 80px;
 }
-.main-header .top-nav .left-header span {
+.main-header .top-nav .left-header .logo {
+  width: 150px;
+}
+.main-header .top-nav .left-header .phone-number {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+.main-header .top-nav .left-header .phone-number span {
   color: #C0944A;
   font-weight: 600;
 }
-.main-header .top-nav .left-header span.text-xs {
+.main-header .top-nav .left-header .phone-number span.text-xs {
   color: #272829;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 .main-header .form-group {
-  max-width: 560px;
-  width: 500px;
   margin-right: 1.5rem;
 }
 .main-header .form-control {
@@ -369,11 +375,11 @@ i {
 }
 .main-header .bottom-nav .navbar {
   padding: 0.5rem 0;
+  gap: 1.5rem;
 }
 .main-header .bottom-nav .navbar li {
   position: relative;
   padding: 1rem 0 0.5rem 0;
-  margin-right: 1.8rem;
 }
 .main-header .bottom-nav .navbar li::after {
   position: absolute;
@@ -398,6 +404,7 @@ i {
   font-weight: 600;
   color: #C0944A;
   margin-right: 0.5rem;
+  padding: 1rem 0 0.5rem 0;
 }
 .main-header .bottom-nav .lang-nav li:hover {
   color: #ccc;
@@ -934,6 +941,13 @@ i {
 }
 
 @media only screen and (max-width: 768px) {
+  .main-header .top-nav .left-header {
+    gap: 0;
+  }
+  .main-header .mobile-logo .m-logo {
+    width: 200px;
+    padding-top: 0.5rem;
+  }
   .home-products-section .container .product-items-swiper .swiper-button-next,
   .home-products-section .container .product-items-swiper .swiper-button-prev {
     width: 30px;
@@ -958,6 +972,12 @@ i {
   }
   .blog-section .blog-item .blog-img {
     height: 250px;
+  }
+  .similiar-products-section .section-head .text-brown {
+    font-size: 1.5rem;
+  }
+  .similiar-products-section .section-head .text-brown::after {
+    width: 100px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -999,10 +1019,14 @@ i {
   }
   .main-header .bottom-nav .mobile-search .form-group {
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-header .bottom-nav .mobile-search .form-group .btn-brown {
-    width: 50px;
-    height: 50px;
+    width: 53px;
+    height: 53px;
+    top: 0;
+    right: 0;
   }
   .main-header .bottom-nav .lang-nav li {
     color: #fff;
