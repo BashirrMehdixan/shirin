@@ -1,0 +1,45 @@
+.btn {
+    background-color: transparent;
+    padding: .5rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    outline: none;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-brown {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 1rem 4rem;
+    background-color: #C0944A;
+
+    &:hover {
+        opacity: .7;
+
+    }
+}
+
+.btn-brown-outline {
+    background-color: #F4E8B5;
+    color: #C0944A;
+    padding: 1rem 4rem;
+    border: 1px solid #C0944A;
+
+    &:hover {
+        background-color: #C0944A;
+        color: #fff;
+    }
+
+}
+
+.form-control {
+    width: 100%;
+    padding: .8rem 1rem;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+}

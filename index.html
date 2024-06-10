@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Shirin.az</title>
+</head>
+
+<body>
+    <header class="relative">
+        <div class="container">
+            <div class="main-header">
+                <div class="flex items-center top-nav">
+                    <div class="w-sm-full w-md-full w-50">
+                        <div class="flex items-center left-header">
+                            <button class="btn nav-btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <a href="./index.html" class="w-sm-50 w-md-50 w-25 mx-md-auto">
+                                <img src="./assets/images/logo.png" class="w-full w-md-50" alt="">
+                            </a>
+
+                            <div class="d-none flex flex-col ml-8">
+                                <span class="text-xs">Bizə zəng edin</span>
+                                <a href="tel:+994 50 400 07 50">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                    <span>+994 50 400 07 50</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none w-50">
+                        <div class="flex items-center justify-end">
+                            <form>
+                                <div class="relative form-group">
+                                    <input type="text" class="form-control" placeholder="Nə axtarırsız?">
+                                    <button class="btn btn-brown">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <ul class="flex items-center nav-social-links">
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between bottom-nav">
+                    <div class="flex items-center mobile-logo">
+                        <a href="./index.html" class="w-50">
+                            <img src="./assets/images/logo-white.png" class="w-full" alt="">
+                        </a>
+                        <div class="w-50">
+                            <div class="flex justify-end">
+                                <button class="btn btn-close text-lg text-white">
+                                    <i class="fa-solid fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="flex items-center navbar">
+                            <li>
+                                <a href="./index.html">
+                                    Ana səhifə
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html">
+                                    Haqqımızda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./catalog.html">
+                                    Kataloq
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./brands.html">
+                                    Brendlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./blog.html">
+                                    Mediada biz
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./awards.html">
+                                    Mükafatlar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">
+                                    Əlaqə
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex flex-col items-center justify-end mobile-search">
+                        <form>
+                            <div class="relative form-group">
+                                <input type="text" class="form-control" placeholder="Nə axtarırsız?">
+                                <button class="btn btn-brown">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="flex items-center nav-social-links">
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="flex items-center lang-nav">
+                        <li>
+                            <a href="#">
+                                Az
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                En
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ru
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navbar">
+
+        </div>
+    </header>
+
+    <!-- Banner section starts -->
+    <section class="banner-section">
+        <div class="relative bg banner-bg">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="text-4xl banner-title">
+                        Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                    </h1>
+                    <div class="inner-text">
+                        More recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                        Ipsum.
+                    </div>
+
+                    <a href="./index.html" class="btn btn-brown">
+                        Ətraflı
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section ends -->
+
+    <!-- About section starts -->
+    <section class="about-section">
+        <div class="container">
+            <div class="flex flex-wrap items-center">
+                <div class="w-sm-full w-md-full w-50">
+                    <div class="section-img">
+                        <img src="./assets/images/section-images/about-section.png" class="w-full" alt="">
+                    </div>
+                </div>
+
+                <div class="w-sm-full w-md-full w-50">
+                    <div class="content-box">
+                        <div class="section-head">
+                            <span class="text-sm">
+                                Haqqımızda
+                            </span>
+                            <h5 class="text-lg">
+                                Lorem Ipsum is simply dummy text
+                            </h5>
+                        </div>
+                        <p class="inner-text">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form,
+                            by injected humour, or randomised words which don't look even slightly believable. If you
+                            are going to use a passage of
+                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
+                            text...
+                        </p>
+
+                        <a href="./index.html" class="btn btn-brown">Ətraflı</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section ends -->
+
+    <!-- Popular section starts -->
+    <section class="bg popular-section">
+        <div class="container">
+            <div class="section-head">
+                <h4 class="text-brown text-center">
+                    Popular
+                </h4>
+            </div>
+            <div class="flex flex-wrap items-center items-box">
+                <div class="w-sm-full w-50">
+                    <div class="item">
+                        <div class="item-img">
+                            <a href="./catalog.html">
+                                <img src="./assets/images/products/product-1.png" class="w-full" alt="">
+                            </a>
+                        </div>
+                        <h5 class="text-md item-title">
+                            <a href="./catalog.html">
+                                “Sweety” şirniyyat çeşidləri
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="w-sm-full w-50">
+                    <div class="item">
+                        <div class="item-img">
+                            <a href="./catalog.html">
+                                <img src="./assets/images/products/product-1.png" class="w-full" alt="">
+                            </a>
+                        </div>
+                        <h5 class="text-md item-title">
+                            <a href="./catalog.html">
+                                “Sweety” şirniyyat çeşidləri
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="w-sm-full w-50">
+                    <div class="item">
+                        <div class="item-img">
+                            <a href="./catalog.html">
+                                <img src="./assets/images/products/product-1.png" class="w-full" alt="">
+                            </a>
+                        </div>
+                        <h5 class="text-md item-title">
+                            <a href="./catalog.html">
+                                “Sweety” şirniyyat çeşidləri
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="w-sm-full w-50">
+                    <div class="item">
+                        <div class="item-img">
+                            <a href="./catalog.html">
+                                <img src="./assets/images/products/product-1.png" class="w-full" alt="">
+                            </a>
+                        </div>
+                        <h5 class="text-md item-title">
+                            <a href="./catalog.html">
+                                “Sweety” şirniyyat çeşidləri
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular section ends -->
+
+    <!-- Products section starts -->
+    <section class="relative home-products-section">
+        <div class="container">
+            <div class="section-head">
+                <h4 class="text-brown text-center">
+                    Məhsullar
+                </h4>
+            </div>
+
+            <div class="swiper product-items product-items-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-2.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-3.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-4.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-5.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-2.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-4.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-5.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-2.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-3.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-4.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-5.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-2.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-4.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail.html">
+                            <div class="relative bg-white item">
+                                <h5 class="text-md item-title text-center">
+                                    "Sweety"
+                                </h5>
+                                <div class="item-img">
+                                    <img src="./assets/images/products/product-5.png" class="w-full" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Products section ends -->
+
+    <!-- Media section starts -->
+    <section class="bg-brown blog-section">
+        <div class="container">
+            <div class="section-head">
+                <h4 class="text-brown text-center">
+                    Mediada Biz
+                </h4>
+            </div>
+            <div class="flex flex-wrap items-center media-items">
+                <div class="w-sm-full w-md-50 w-33">
+                    <div class="blog-item text-center">
+                        <div class="relative blog-img">
+                            <a href="./blog-detail.html">
+                                <img src="./assets/images/blog/blog-1.avif" class="w-full" alt="">
+                            </a>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="blog-body">
+                            <p class="blog-date">
+                                May 29, 2024
+                            </p>
+                            <h3 class="text-xl blog-title">
+                                <a href="./blog-detail.html">
+                                    Lorem ipsum dolor sit.
+                                </a>
+                            </h3>
+                            <p class="inner-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quidem distin...
+                            </p>
+
+                            <a href="./blog-detail.html" class="btn btn-brown-outline">
+                                Ətraflı
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-sm-full w-md-50 w-33">
+                    <div class="blog-item text-center">
+                        <div class="relative blog-img">
+                            <a href="./blog-detail.html">
+                                <img src="./assets/images/blog/blog-1.avif" class="w-full" alt="">
+                            </a>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="blog-body">
+                            <p class="blog-date">
+                                May 29, 2024
+                            </p>
+                            <h3 class="text-xl blog-title">
+                                <a href="./blog-detail.html">
+                                    Lorem ipsum dolor sit.
+                                </a>
+                            </h3>
+                            <p class="inner-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quidem distin...
+                            </p>
+
+                            <a href="./blog-detail.html" class="btn btn-brown-outline">
+                                Ətraflı
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-sm-full w-md-50 w-33">
+                    <div class="blog-item text-center">
+                        <div class="relative blog-img">
+                            <a href="./blog-detail.html">
+                                <img src="./assets/images/blog/blog-1.avif" class="w-full" alt="">
+                            </a>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="blog-body">
+                            <p class="blog-date">
+                                May 29, 2024
+                            </p>
+                            <h3 class="text-xl blog-title">
+                                <a href="./blog-detail.html">
+                                    Lorem ipsum dolor sit.
+                                </a>
+                            </h3>
+                            <p class="inner-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quidem distin...
+                            </p>
+
+                            <a href="./blog-detail.html" class="btn btn-brown-outline">
+                                Ətraflı
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Media section ends -->
+
+    <!-- Footer starts -->
+    <footer>
+        <div class="footer-section bg-darkbrown">
+            <div class="container">
+                <div class="flex flex-wrap footer-top">
+                    <div class="w-sm-full w-md-full w-33 mx-auto footer-left">
+                        <a href="./index.html" class="logo">
+                            <img src="./assets/images/logo-white.png" class="w-full" alt="">
+                        </a>
+                        <ul class="flex items-center social-links">
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-sm-full w-md-full w-66">
+                        <ul class="flex flex-sm-col items-center footer-item navbar">
+                            <li>
+                                <a href="./about.html">
+                                    Haqqımızda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./catalog.html">
+                                    Kataloq
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./brands.html">
+                                    Brendlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./awards.html">
+                                    Mükafatlar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">
+                                    Əlaqə
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex flex-sm-col items-center footer-item navbar address-list">
+                            <li>
+                                <span class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <span>
+                                    Bakı şəh., Nəsimi ray., 20B
+                                </span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <span>
+                                    +994 50 432 66 33
+                                </span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <span>
+                                    info@shirin.az
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="text-center text-white">
+                        © 2023 Bütün hüquqlar qorunur.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
